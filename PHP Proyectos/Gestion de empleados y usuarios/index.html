@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Bienvenida</title>
+    <style>
+        /* Estilos simples para centrar el mensaje en la pantalla */
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('Imagenes/Empresa2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fafcfd; /* Color de texto personalizado */
+        }
+    </style>
+</head>
+<body>
+<div class="square"></div>
+<h1>¡Bienvenido a Nuestro Sitio!</h1>
+
+<script>
+    // Redirige a la página de inicio de sesión después de 3 segundos (3000 ms)
+    setTimeout(function() {
+        window.location.href ="login.php"; // Asegúrate de que esta ruta sea correcta
+    }, 3000);
+</script>
+</body>
+</html>
+

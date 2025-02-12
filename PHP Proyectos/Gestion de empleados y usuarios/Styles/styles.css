@@ -1,0 +1,465 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilos comunes para el nav */
+nav {
+    background-color: #2c3e50; /* Fondo oscuro del menú */
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+nav ul li:hover > a {
+    background-color: #1abc9c; /* Color al hacer hover sobre los enlaces */
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #34495e; /* Fondo oscuro del submenú */
+    padding: 0;
+    list-style: none;
+    z-index: 1;
+    min-width: 200px;
+}
+
+nav ul li:hover > ul {
+    display: block; /* Muestra el submenú al pasar el mouse */
+}
+
+nav ul li ul li {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+    color: white;
+}
+
+nav ul li ul li a:hover {
+    background-color: #1abc9c; /* Hover en los elementos del submenú */
+}
+
+
+main {
+    padding: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 10px;
+}
+
+.table-container {
+    width: 100%; /* O el ancho deseado */
+    text-align: left; /* Asegura que el contenido esté alineado a la izquierda */
+    padding-left: 0; /* Ajusta el padding a la izquierda */
+}
+
+/* Estilo general para la tabla */
+table {
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Esconde desbordes en la tabla */
+}
+
+/* Estilo para el encabezado */
+table thead {
+    background-color: #2c3e50;
+    color: white;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espacio entre letras */
+}
+
+/* Celdas del encabezado y el cuerpo */
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #bdc3c7;
+    font-size: 15px; /* Tamaño de fuente legible */
+    overflow: hidden; /* Evita el desbordamiento */
+    text-overflow: ellipsis; /* Agrega "..." si el texto es muy largo */
+    white-space: nowrap; /* Evita que el texto se corte en varias líneas */
+}
+.text-wrap {
+    white-space: normal; /* Permite el salto de línea */
+    word-wrap: break-word; /* Rompe palabras largas */
+    width: 100px; /* Ajusta el ancho según tus necesidades */
+}
+
+table td.nombre, table td.apellido {
+    max-width: 200px; /* Ajusta según tu necesidad */
+    white-space: nowrap; /* Evitar que se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto excedente */
+    text-overflow: ellipsis; /* Muestra "..." si el texto es muy largo */
+}
+
+/* Filas pares del cuerpo */
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Efecto hover en las filas */
+table tbody tr:hover {
+    background-color: #dcdde1;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Para pantallas pequeñas: agregar desplazamiento horizontal */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap; /* Evita que el contenido se corte */
+    }
+
+    table th, table td {
+        white-space: normal; /* Permitir que el texto largo envuelva en pantallas pequeñas */
+    }
+}
+
+.botones-acciones {
+    display: flex; /* Aplica flexbox para alinear los botones */
+    gap: 10px; /* Espacio entre los botones, ajusta según tu preferencia */
+}
+
+.photo-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999; /* Asegura que el modal esté encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+}
+
+.modal-content {
+    position: relative; /* Para posicionar el botón de cierre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%; /* Máximo ancho del contenedor */
+    max-height: 90%; /* Máxima altura del contenedor */
+}
+
+.modal-content img {
+    max-width: none; /* Permitir que la imagen use su tamaño natural */
+    max-height: none; /* Permitir que la imagen use su tamaño natural */
+    display: block; /* Para eliminar espacio en línea adicional */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-right: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn-eliminar {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-agregar {
+    background-color: #2980b9;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.form-section {
+    margin-top: 2rem;
+}
+
+.form-crear-editar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 48%; /* Los campos ocupan menos de la mitad del ancho */
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-group input, select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.btn-submit {
+    background-color: #113069;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #122b5a;
+}
+
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.boton-nuevo-pago {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.btn-nuevo-pago {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Estilos para el botón de cerrar sesión */
+.btn-cerrar {
+    background-color: #ff5555; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.btn-cerrar:hover {
+    background-color: #ff3333; /* Color de fondo al pasar el mouse */
+}
+
+
+.btn-nuevo-pago:hover {
+    background-color: #45a049;
+}
+
+.btn-buscar {
+    background-color: #062fd5;
+    color: #f2f4fa;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-buscar:hover {
+    background-color: #2874a6;
+}
+
+.btn-nuevo {
+    position: fixed;
+    bottom: 20px; /* Distancia desde el borde inferior */
+    left: 20px; /* Distancia desde el borde izquierdo */
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    padding: 15px 20px; /* Padding para tamaño medio */
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.employee-button{
+    background-color: #04bff6;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-right: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #f44336;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posicionar encima del campo */
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: none; /* Ocultar inicialmente */
+}
+
+/* Estilo inicial para que la imagen se muestre más pequeña */
+#employeePhoto {
+    max-width: 500px; /* Tamaño pequeño */
+    max-height: 500px; /* Tamaño pequeño */
+    transition: transform 0.3s ease; /* Transición suave al agrandarla */
+}
+
+#employeePhoto.large {
+    max-width: 500px; /* Tamaño grande cuando se agranda */
+    max-height: 500px;
+}
+
+#photoModal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#photoModal img {
+    cursor: pointer; /* Cursor de mano para indicar que se puede hacer clic */
+}
+
+#listaArchivos {
+    display: flex;
+    flex-direction: column; /* Organiza los archivos en una columna */
+    gap: 20px; /* Espacio entre cada archivo */
+}
+
+.archivo-container {
+    border: 1px solid #ccc; /* Borde alrededor de cada archivo */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.acciones {
+    margin-top: 10px; /* Espacio entre el iframe y los botones */
+}
+
+.acciones .btn {
+    margin-right: 20px; /* Espacio entre botones */
+    padding: 5px 10px; /* Tamaño del botón */
+    text-decoration: none; /* Quitar subrayado */
+    color: #fff; /* Color del texto */
+    background-color: #55e657; /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+}
+
+.acciones .btn.btn-eliminar {
+    background-color: #dc3545; /* Color específico para el botón de eliminar */
+}
+
