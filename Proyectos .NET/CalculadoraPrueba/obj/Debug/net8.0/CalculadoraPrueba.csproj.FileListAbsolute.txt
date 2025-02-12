@@ -1,0 +1,14 @@
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\bin\Debug\net8.0\CalculadoraPrueba.exe
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\bin\Debug\net8.0\CalculadoraPrueba.deps.json
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\bin\Debug\net8.0\CalculadoraPrueba.runtimeconfig.json
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\bin\Debug\net8.0\CalculadoraPrueba.dll
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\bin\Debug\net8.0\CalculadoraPrueba.pdb
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\obj\Debug\net8.0\CalculadoraPrueba.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\obj\Debug\net8.0\CalculadoraPrueba.AssemblyInfoInputs.cache
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\obj\Debug\net8.0\CalculadoraPrueba.AssemblyInfo.cs
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\obj\Debug\net8.0\CalculadoraPrueba.csproj.CoreCompileInputs.cache
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\obj\Debug\net8.0\CalculadoraPrueba.dll
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\obj\Debug\net8.0\refint\CalculadoraPrueba.dll
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\obj\Debug\net8.0\CalculadoraPrueba.pdb
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\obj\Debug\net8.0\CalculadoraPrueba.genruntimeconfig.cache
+C:\Users\ALEXANDER\Documents\CalculadoraPrueba\obj\Debug\net8.0\ref\CalculadoraPrueba.dll
