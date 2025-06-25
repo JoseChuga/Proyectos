@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ruta Óptima - Suchitepéquez</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body { font-family: sans-serif; background: #f0f8ff; margin: 0; padding: 20px; }
+    svg { border: 1px solid #ccc; background: white; display: block; margin: 0 auto; }
+    #controls { text-align: center; margin-bottom: 10px; }
+    button { padding: 10px 20px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <h2>Recorrido del Dron en Suchitepéquez</h2>
+    <button onclick="iniciar()">Iniciar Ruta</button>
+    <p>Distancia total óptima: <strong id="distancia">0.00</strong> km</p>
+  </div>
+  <svg id="mapa" width="1000" height="700"></svg>
+  <script src="script.js"></script>
+</body>
+</html>
